@@ -1,0 +1,24 @@
+Package: homework6
+Title: Sparse Numeric Vector Methods 
+Version: 0.0.0.9000
+Authors@R: 
+    person("Caroline", "Zhuang", , "caroline_zhuang@utexas.edu", 
+    role = c("aut", "cre"))
+Description: This package does many methods on sparse numeric vectors. A sparse 
+  numeric vector is a vector where the majority of the elements are zero. It has 
+  three slots, value, which is the numeric vector containing all the non-zero 
+  elements, pos, an integer vector containing the index positions of non-zero 
+  elements, and length, which is the overall length of the vector including zero
+  elements. The methods included are addition, subtraction, multiplication,
+  cross-multiplication and division on sparse numeric vectors. There is also 
+  methods of the mean, normalization and standardization. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports:
+  methods,
+  ggplot2

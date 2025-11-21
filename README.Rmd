@@ -1,0 +1,63 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# homework6
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The **homework6** package implements an S4 class `sparse_numeric` for sparse
+numeric vectors, where most elements are zero. Only the non-zero values and
+their positions are stored.
+
+The package provides:
+
+- Coercion between base `numeric` and `sparse_numeric`
+- Arithmetic on sparse vectors:
+  - `sparse_add()`, `sparse_sub()`, `sparse_mult()`, `sparse_div()`,
+    `sparse_crossprod()`
+  - Operator overloads: `+`, `-`, `*`, `/` for `sparse_numeric`
+- A `plot()` method to visualize overlapping non-zero entries
+- Statistical methods for sparse vectors:
+  - `mean()` (including zeros)
+  - `norm()` (Euclidean norm)
+  - `standardize()` (center and scale)
+
+## Installation
+
+You can install the development version of homework6 like so:
+
+``` r
+# from the package root directory
+devtools::install()
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(homework6)
+## basic example code
+x <- as(c(0, 1, 0, 3), "sparse_numeric")
+y <- as(c(2, 0, 4, -1), "sparse_numeric")
+
+x + y            # sparse addition
+mean(x)          # mean including zeros
+norm(x)          # Euclidean norm
+z <- standardize(x)
+plot(x, y) 
+```
+

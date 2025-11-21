@@ -4,6 +4,8 @@
 # homework6
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/carolinezhuang23/homework6/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/carolinezhuang23/homework6/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The **homework6** package implements an S4 class `sparse_numeric` for

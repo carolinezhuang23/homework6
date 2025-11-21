@@ -22,5 +22,5 @@ Config/testthat/edition: 3
 Imports:
   methods,
   ggplot2
-URL: https://github.com/carolinezhuang23/homework6
+URL: https://carolinezhuang23.github.io/homework6
 BugReports: https://github.com/carolinezhuang23/homework6/issues
